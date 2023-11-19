@@ -56,7 +56,6 @@ export default async function InvoicesTable({
             ))}
           </div>
           <table className="hidden min-w-full text-gray-900 md:table">
-            {/* Make sure to add the alt property for the Image component in the table section */}
             <tbody className="bg-white">
               {invoices?.map((invoice) => (
                 <tr
@@ -67,7 +66,7 @@ export default async function InvoicesTable({
                     <div className="flex items-center gap-3">
                       <Image
                         src={invoice.image_url}
-                        alt="Invoice Image"
+                        alt="Invoice Image" // Add the alt prop here
                         className="rounded-full"
                         width={28}
                         height={28}
